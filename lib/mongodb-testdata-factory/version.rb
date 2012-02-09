@@ -1,7 +1,6 @@
+# -*- encoding: utf-8 -*-
 module Mongodb
   module Testdata
-    module Factory
-      VERSION = "0.0.1"
-    end
+    VERSION = "0.0.1"
   end
 end

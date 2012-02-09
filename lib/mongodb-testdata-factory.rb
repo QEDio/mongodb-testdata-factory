@@ -1,9 +1,9 @@
-require "mongodb-testdata-factory/version"
+# -*- encoding: utf-8 -*-
+require 'mongodb-testdata-factory/factory'
+require 'mongodb-testdata-factory/version'
 
 module Mongodb
   module Testdata
-    module Factory
-      # Your code goes here...
-    end
+    # Your code goes here...
   end
 end

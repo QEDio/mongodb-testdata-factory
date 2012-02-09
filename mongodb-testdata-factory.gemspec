@@ -4,12 +4,12 @@ require "mongodb-testdata-factory/version"
 
 Gem::Specification.new do |s|
   s.name        = "mongodb-testdata-factory"
-  s.version     = Mongodb::Testdata::Factory::VERSION
+  s.version     = Mongodb::Testdata::VERSION
   s.authors     = ["Johannes Kaefer"]
-  s.email       = ["jak4@jak4.com"]
+  s.email       = ["jak4@qed.io"]
   s.homepage    = ""
-  s.summary     = %q{TODO: Write a gem summary}
-  s.description = %q{TODO: Write a gem description}
+  s.summary     = %q{Testdata for Mongodb-MapReduce UseCases}
+  s.description = %q{# -*- encoding: utf-8 -*-}
 
   s.rubyforge_project = "mongodb-testdata-factory"
 
@@ -18,7 +18,16 @@ Gem::Specification.new do |s|
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ["lib"]
 
-  # specify any dependencies here; for example:
-  # s.add_development_dependency "rspec"
-  # s.add_runtime_dependency "rest-client"
+  s.add_development_dependency 'rake'
+  s.add_development_dependency 'mongoid'
+  s.add_development_dependency 'yajl-ruby'
+  s.add_development_dependency 'activesupport', '~> 3.1.1'
+  s.add_development_dependency 'i18n'
+
+  s.add_development_dependency 'shoulda'
+  s.add_development_dependency 'turn'
+  s.add_development_dependency 'rspec'
+  s.add_development_dependency 'spork'
+  s.add_development_dependency 'spork-testunit'
+  s.add_development_dependency 'simplecov'
 end
