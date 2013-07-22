@@ -21,7 +21,7 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'rake'
   s.add_development_dependency 'mongoid'
   s.add_development_dependency 'yajl-ruby'
-  s.add_development_dependency 'activesupport', '~> 3.1.1'
+  s.add_development_dependency 'activesupport', '~> 3.2'
   s.add_development_dependency 'i18n'
 
   s.add_development_dependency 'shoulda'
